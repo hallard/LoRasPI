@@ -36,7 +36,7 @@ CE0 or CE1 <---->  LED D2
 
 ### Boards  
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/LoRasPI-top.png" alt="Top" width="40%" height="40%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/LoRasPImaster/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
 You can order the PCB of this board at [OSHPARK][3]
 
@@ -54,7 +54,7 @@ See news and other projects on my [blog][2]
 
 [1]: https://staging.thethingsnetwork.org/wiki/Hardware/Gateways/DIY 
 [2]: https://hallard.me
-[3]: https://oshpark.com/shared_projects/
+[3]: https://oshpark.com/shared_projects/BBhyhBkz
 [4]: http://www.hoperf.com/rf_transceiver/lora/
 [5]: https://github.com/tftelkamp/single_chan_pkt_fwd
 [6]: http://www.daveakerman.com/?p=1719
