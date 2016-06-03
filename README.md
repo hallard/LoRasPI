@@ -15,7 +15,8 @@ Detailed Description
 
 Look at the schematics for more informations.
 
-SPI connexion is classic (MOSI/MISO/CLK), Chip Select can be connected to CE0 or CE1 of PI depending on bord solder PAD jumper (default to CE0)
+SPI connexion is classic (MOSI/MISO/CLK), Chip Select can be connected to CE0 or CE1 of PI depending on bord solder PAD jumper.
+Take care that by default it's connected to CE0 (wired) so you don't have to do anything. If you want to connect to CE1 you'll need to cut CE0 trace on the PCB (on the solder pad).
 
 Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout
 
