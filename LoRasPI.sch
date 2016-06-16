@@ -1794,7 +1794,7 @@ Standard A4 size frame in Landscape</description>
 <text x="106.68" y="15.24" size="2.54" layer="94">See http://github/hallard/LoRasPI</text>
 <text x="91.44" y="68.58" size="1.778" layer="95">CS</text>
 <text x="143.51" y="101.6" size="1.778" layer="95">CS</text>
-<text x="27.94" y="60.96" size="2.54" layer="94">Optionnal capacitors
+<text x="27.94" y="60.96" size="2.54" layer="94">Optional capacitors
 Bottom Side of board</text>
 </plain>
 <instances>
