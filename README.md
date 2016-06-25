@@ -1,14 +1,16 @@
 Raspberry PI Lora Gateway/Node for HopeRF RFM95 RFM96 RFM98 Modules
 ===================================================================
 
-This shield is used to hold HopeRF [Lora module][4] Software with Raspbery PI. it has just few minimal features and should works for [TTN network][1] such as [Single LoraWan Gateway][5] (change pinout on code) or directly work with [HAB Supplies Lora Gateway][7] (same pinout), see this excellent [Dave's article][6].
+This shield is used to hold HopeRF [Lora module][4] Software with Raspbery PI. it has just few minimal features and it's working for [TTN network][1]
+I tweaked the [Single LoraWan Gateway][5] to get it working out of the box. It should also works with [HAB Supplies Lora Gateway][7] (same pinout), see this excellent [Dave's article][6].
 
+Features
+========
 - Placement for RFM95/96/98 Lora module
 - Placement for choosing single Wire, SMA or u-FL Antenna type
 - 2 x LED LED for visual indication
 
-I'm waiting boards from OSHPark, so I didn't fully tested them yet, I will update ASAP.
-**Use at your own risks**
+~~I'm waiting boards~~ Boards arrived from OSHPark, all is working as expected. ~~so I didn't fully tested them yet, I will update ASAP~~.
 
 Detailed Description
 ====================
@@ -31,20 +33,20 @@ Raspberry PI   On Board LEDS
 CE0 or CE1 <---->  LED D2
 ```
 
-
 ### Schematic  
-![schematic](https://raw.githubusercontent.com/hallard/LoRasPI/master/LoRasPI-sch.png)  
+![schematic](https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-sch.png)  
 
 ### Boards  
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/LoRasPI-top.png" alt="Top" width="40%" height="40%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top" width="40%" height="40%">&nbsp;
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
 You can order the PCB of this board at [OSHPARK][3]
 
 ### Assembled boards
 
-I'm waiting boards from OSHPark, so I didn't fully tested them yet, I will update ASAP.
-**Use at your own risks**
+Assembled and working board connected to Raspberry PI.
+
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-on-Pi.jpg" alt="LoRasPI plugged on PI">
 
 ##License
 
@@ -57,6 +59,6 @@ See news and other projects on my [blog][2]
 [2]: https://hallard.me
 [3]: https://oshpark.com/shared_projects/BBhyhBkz
 [4]: http://www.hoperf.com/rf_transceiver/lora/
-[5]: https://github.com/tftelkamp/single_chan_pkt_fwd
+[5]: https://github.com/hallard/single_chan_pkt_fwd
 [6]: http://www.daveakerman.com/?p=1719
 [7]: https://store.uputronics.com/index.php?route=product/product&search=lora&product_id=68
