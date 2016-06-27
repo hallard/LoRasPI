@@ -40,13 +40,16 @@ CE0 or CE1 <---->  LED D2
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top" width="40%" height="40%">&nbsp;
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
 
-You can order the PCB of this board at [OSHPARK][3]
-
 ### Assembled boards
 
-Assembled and working board connected to Raspberry PI.
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.jpg" alt="Top">    
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.jpg" alt="Bottom">
+
+Connected to Raspberry PI.
 
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-on-Pi.jpg" alt="LoRasPI plugged on PI">
+
+You can order the PCB of this board at [OSHPARK][3]
 
 ##License
 
