@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="100" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -266,6 +266,7 @@
 <smd name="DIO2" x="5.7795" y="7" dx="2" dy="1.27" layer="1" rot="R180"/>
 <smd name="DIO5" x="-10.2245" y="-4.9365" dx="2" dy="1.27" layer="1"/>
 <smd name="RST" x="-10.2225" y="-2.905" dx="2" dy="1.27" layer="1" rot="R180"/>
+<smd name="DIO1" x="5.7795" y="5.095" dx="2" dy="1.27" layer="1" rot="R180"/>
 </package>
 <package name="SMA-EDGE">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
@@ -1014,6 +1015,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-9.144" y="7.62" size="1.778" layer="94">RFM92/95/96/98</text>
 <pin name="DIO5" x="12.7" y="-7.62" visible="pin" length="short" direction="oc" rot="R180"/>
 <pin name="RST" x="-12.7" y="-5.08" visible="pin" length="short" direction="oc"/>
+<pin name="DIO1" x="-12.7" y="-10.16" visible="pin" length="short" direction="oc"/>
 </symbol>
 <symbol name="3V3">
 <wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
@@ -1116,6 +1118,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
 <connect gate="G$1" pin="DIO0" pad="DIO0"/>
+<connect gate="G$1" pin="DIO1" pad="DIO1"/>
 <connect gate="G$1" pin="DIO2" pad="DIO2"/>
 <connect gate="G$1" pin="DIO5" pad="DIO5"/>
 <connect gate="G$1" pin="GND" pad="GND GND1 GND2"/>
@@ -1748,6 +1751,87 @@ Standard A4 size frame in Landscape</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="Seeed-Discrete">
+<packages>
+<package name="SOD123-2.7X1.6">
+<wire x1="1.325" y1="-0.8" x2="-1.325" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-1.325" y1="-0.8" x2="-1.325" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-1.325" y1="0.8" x2="1.325" y2="0.8" width="0.127" layer="21"/>
+<wire x1="1.325" y1="0.8" x2="1.325" y2="-0.8" width="0.127" layer="21"/>
+<smd name="2" x="1.635" y="0" dx="1.02" dy="1.2" layer="1" rot="R270"/>
+<smd name="1" x="-1.635" y="0" dx="1.02" dy="1.2" layer="1" rot="R270"/>
+<text x="-1.905" y="1.016" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-1.27" y="-0.254" size="0.635" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.397" y1="-0.762" x2="1.397" y2="0.762" layer="39" rot="R180"/>
+<polygon width="0.127" layer="21">
+<vertex x="-0.254" y="0.508"/>
+<vertex x="-0.254" y="-0.508"/>
+<vertex x="0.508" y="0"/>
+</polygon>
+</package>
+<package name="2P-SMD-0.8X0.6X0.48H">
+<wire x1="-0.4" y1="0.3" x2="0.4" y2="0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="0.3" x2="0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.4" y1="-0.3" x2="-0.4" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.4" y1="-0.3" x2="-0.4" y2="0.3" width="0.127" layer="21"/>
+<smd name="1" x="-0.45" y="0" dx="0.3" dy="0.7" layer="1" rot="R90"/>
+<smd name="2" x="0.45" y="0" dx="0.3" dy="0.7" layer="1" rot="R90"/>
+<text x="-1.905" y="0.635" size="0.889" layer="25" ratio="11">&gt;NAME</text>
+<text x="-0.635" y="-0.127" size="0.254" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.4" y1="-0.3" x2="0.4" y2="0.3" layer="39"/>
+<wire x1="-0.1905" y1="0.127" x2="-0.1905" y2="-0.127" width="0.127" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="D-ESD-DF2S6.8FS">
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.27" y="1.27"/>
+<vertex x="0" y="0"/>
+<vertex x="-1.27" y="-1.27"/>
+</polygon>
+<wire x1="0" y1="0" x2="0" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0.635" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.27" x2="-0.635" y2="-1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-3.81" y="0" visible="off" length="short"/>
+<pin name="2" x="2.54" y="0" visible="off" length="short" rot="R180"/>
+<text x="-3.81" y="2.54" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="D-ESD-2P" prefix="D" uservalue="yes">
+<description>Diodes for Protectiong against ESD</description>
+<gates>
+<gate name="G$1" symbol="D-ESD-DF2S6.8FS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-CESD5V0D1" package="SOD123-2.7X1.6">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-DF2S6.8FS" package="2P-SMD-0.8X0.6X0.48H">
+<connects>
+<connect gate="G$1" pin="1" pad="2"/>
+<connect gate="G$1" pin="2" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1772,9 +1856,9 @@ Standard A4 size frame in Landscape</description>
 <part name="P+3" library="_c2h" deviceset="3V3" device=""/>
 <part name="SUPPLY5" library="supply2" deviceset="GND" device=""/>
 <part name="R1" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
-<part name="D1" library="_c2h" deviceset="LED" device="0805-LARGE" value="TX/RX"/>
+<part name="D3" library="_c2h" deviceset="LED" device="0805-LARGE" value="TX/RX"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="D2" library="_c2h" deviceset="LED" device="0805-LARGE" value="CS"/>
+<part name="D4" library="_c2h" deviceset="LED" device="0805-LARGE" value="CS"/>
 <part name="R2" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="J1" library="dp_devices" deviceset="JUMPER_1X3" device="0805">
@@ -1783,9 +1867,14 @@ Standard A4 size frame in Landscape</description>
 </part>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="Lora Raspberry PI Gateway / Node"/>
-<attribute name="CREVISION" value="1.0"/>
+<attribute name="CREVISION" value="1.1"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
+<part name="D0" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
+<part name="D1" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
+<part name="D2" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
+<part name="R3" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="P+4" library="_c2h" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1796,6 +1885,11 @@ Standard A4 size frame in Landscape</description>
 <text x="143.51" y="101.6" size="1.778" layer="95">CS</text>
 <text x="27.94" y="60.96" size="2.54" layer="94">Optional capacitors
 Bottom Side of board</text>
+<text x="114.3" y="68.58" size="1.6764" layer="94">RFM69HCW</text>
+<text x="31.115" y="15.875" size="2.54" layer="94">Logic OR on DIO0/1/2 to be
+LIMC compatible but absolutly
+not mandatory since I made
+a software fix in LIMC</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="88.9" y="104.14"/>
@@ -1821,12 +1915,12 @@ Bottom Side of board</text>
 <attribute name="NAME" x="156.21" y="115.3414" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="156.21" y="109.982" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D1" gate="G$1" x="167.64" y="111.76" smashed="yes" rot="R180">
+<instance part="D3" gate="G$1" x="167.64" y="111.76" smashed="yes" rot="R180">
 <attribute name="NAME" x="169.545" y="108.8136" size="1.778" layer="95"/>
 <attribute name="VALUE" x="162.56" y="114.173" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY6" gate="GND" x="176.53" y="111.76" rot="R90"/>
-<instance part="D2" gate="G$1" x="167.64" y="101.6" smashed="yes" rot="R180">
+<instance part="D4" gate="G$1" x="167.64" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="169.545" y="98.6536" size="1.778" layer="95"/>
 <attribute name="VALUE" x="165.1" y="104.013" size="1.778" layer="96"/>
 </instance>
@@ -1848,6 +1942,14 @@ Bottom Side of board</text>
 <attribute name="CNAME" x="157.48" y="-2.54" size="2.54" layer="94" font="vector"/>
 <attribute name="CREVISION" x="210.79" y="-17.88" size="2.54" layer="94" font="vector"/>
 </instance>
+<instance part="D0" gate="G$1" x="46.355" y="43.815" smashed="yes"/>
+<instance part="D1" gate="G$1" x="46.355" y="38.735" smashed="yes"/>
+<instance part="D2" gate="G$1" x="46.355" y="33.655" smashed="yes"/>
+<instance part="R3" gate="G$1" x="67.945" y="46.355" smashed="yes" rot="R270">
+<attribute name="NAME" x="64.3636" y="47.625" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="69.723" y="48.895" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="P+4" gate="3V3" x="67.945" y="54.61"/>
 </instances>
 <busses>
 </busses>
@@ -1871,9 +1973,21 @@ Bottom Side of board</text>
 <label x="99.06" y="104.14" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="HOPE-RF" gate="G$1" pin="DIO0"/>
-<wire x1="104.14" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
-<label x="91.44" y="55.88" size="1.778" layer="95"/>
+<wire x1="52.705" y1="43.815" x2="52.705" y2="38.735" width="0.1524" layer="91"/>
+<wire x1="52.705" y1="38.735" x2="52.705" y2="33.655" width="0.1524" layer="91"/>
+<wire x1="52.705" y1="33.655" x2="48.895" y2="33.655" width="0.1524" layer="91"/>
+<pinref part="D0" gate="G$1" pin="2"/>
+<wire x1="48.895" y1="43.815" x2="52.705" y2="43.815" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="2"/>
+<wire x1="48.895" y1="38.735" x2="52.705" y2="38.735" width="0.1524" layer="91"/>
+<pinref part="D2" gate="G$1" pin="2"/>
+<wire x1="52.705" y1="38.735" x2="67.945" y2="38.735" width="0.1524" layer="91"/>
+<junction x="52.705" y="38.735"/>
+<label x="70.485" y="38.735" size="1.778" layer="95"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="67.945" y1="38.735" x2="81.28" y2="38.735" width="0.1524" layer="91"/>
+<wire x1="67.945" y1="41.275" x2="67.945" y2="38.735" width="0.1524" layer="91"/>
+<junction x="67.945" y="38.735"/>
 </segment>
 </net>
 <net name="ANTENNA" class="0">
@@ -1966,11 +2080,11 @@ Bottom Side of board</text>
 </segment>
 <segment>
 <pinref part="SUPPLY6" gate="GND" pin="GND"/>
-<pinref part="D1" gate="G$1" pin="MINUS"/>
+<pinref part="D3" gate="G$1" pin="MINUS"/>
 <wire x1="173.99" y1="111.76" x2="170.18" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D2" gate="G$1" pin="MINUS"/>
+<pinref part="D4" gate="G$1" pin="MINUS"/>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="170.18" y1="101.6" x2="173.99" y2="101.6" width="0.1524" layer="91"/>
 </segment>
@@ -1997,6 +2111,11 @@ Bottom Side of board</text>
 <wire x1="43.18" y1="91.44" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="43.18" y="91.44"/>
 <pinref part="P+3" gate="3V3" pin="3V3"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="P+4" gate="3V3" pin="3V3"/>
+<wire x1="67.945" y1="54.61" x2="67.945" y2="51.435" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CE1" class="0">
@@ -2029,36 +2148,73 @@ Bottom Side of board</text>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="D1" gate="G$1" pin="PLUS"/>
+<pinref part="D3" gate="G$1" pin="PLUS"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="162.56" y1="111.76" x2="160.02" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="D2" gate="G$1" pin="PLUS"/>
+<pinref part="D4" gate="G$1" pin="PLUS"/>
 <wire x1="162.56" y1="101.6" x2="160.02" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="CE0" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="127" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="24"/>
 <wire x1="96.52" y1="101.6" x2="120.65" y2="101.6" width="0.1524" layer="91"/>
 <label x="99.06" y="101.6" size="1.778" layer="95"/>
 <wire x1="120.65" y1="101.6" x2="120.65" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="1"/>
 <wire x1="120.65" y1="104.14" x2="127" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="127" y1="101.6" x2="120.65" y2="101.6" width="0.1524" layer="91"/>
-<junction x="120.65" y="101.6"/>
-<junction x="127" y="101.6"/>
 </segment>
+</net>
+<net name="DIO2" class="0">
+<segment>
+<pinref part="D2" gate="G$1" pin="1"/>
+<wire x1="42.545" y1="33.655" x2="34.925" y2="33.655" width="0.1524" layer="91"/>
+<label x="37.465" y="33.655" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HOPE-RF" gate="G$1" pin="DIO2"/>
+<wire x1="129.54" y1="58.42" x2="140.97" y2="58.42" width="0.1524" layer="91"/>
+<label x="132.08" y="58.42" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIO1" class="0">
+<segment>
+<pinref part="D1" gate="G$1" pin="1"/>
+<wire x1="42.545" y1="38.735" x2="34.925" y2="38.735" width="0.1524" layer="91"/>
+<label x="37.465" y="38.735" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HOPE-RF" gate="G$1" pin="DIO1"/>
+<wire x1="104.14" y1="53.34" x2="91.44" y2="53.34" width="0.1524" layer="91"/>
+<label x="91.44" y="53.34" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="DIO0" class="0">
+<segment>
+<pinref part="D0" gate="G$1" pin="1"/>
+<wire x1="42.545" y1="43.815" x2="34.925" y2="43.815" width="0.1524" layer="91"/>
+<label x="37.465" y="43.815" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="HOPE-RF" gate="G$1" pin="DIO0"/>
+<wire x1="104.14" y1="55.88" x2="91.44" y2="55.88" width="0.1524" layer="91"/>
+<label x="91.44" y="55.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="CS" class="0">
 <segment>
 <pinref part="HOPE-RF" gate="G$1" pin="SEL"/>
 <wire x1="104.14" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="127" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -2067,6 +2223,8 @@ Bottom Side of board</text>
 <errors>
 <approved hash="104,1,81.28,109.22,U$2,17,3V3,,,"/>
 <approved hash="104,1,116.84,76.2,HOPE-RF,VCC,3V3,,,"/>
+<approved hash="115,1,138.43,101.6,CS,,,,,"/>
+<approved hash="115,1,97.79,68.58,CS,,,,,"/>
 </errors>
 </schematic>
 </drawing>
