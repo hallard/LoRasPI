@@ -23,7 +23,7 @@ Look at the schematics for more informations.
 SPI connexion is classic (MOSI/MISO/CLK), Chip Select can be connected to CE0 or CE1 of PI depending on bord solder PAD jumper.
 Take care that by default it's connected to CE0 (wired) so you don't have to do anything. If you want to connect to CE1 you'll need to cut CE0 trace on the PCB (on the solder pad).
 
-Only One GPIO needed for DIO0/DIO1/DIO2 (OR made with 3 diodes) that will make this board fully compatible with current LIMC implementation, even if I've done a software fix which works with no interrupt.
+Only One GPIO needed for DIO0/DIO1/DIO2 (OR made with 3 diodes and one resistor R3) that will make this board fully compatible with current LIMC implementation, even if I've done a software fix which works with no interrupt. Only Needed for Lora modules, if you're using RFM69HCW and and to use IRQ just place D0 and R3.
 
 ~~Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout~~ This [Single LoraWan Gateway][5] has been tweaked and works right out of the box.
 
@@ -33,7 +33,7 @@ Detailed Description
 ```
 Raspberry PI   RFM9x Module
    GPIO22  <---->  Reset
-   GPIO25  <---->  DIO0 OR DIO1 OR DIO2 (Hardware OR done with 1N4148 Diode)
+   GPIO25  <---->  DIO0 OR DIO1 OR DIO2 (Hardware OR done with 1N4148 Diode and R3)
    GPIO24  <---->  DIO5 (Ready)
 
 Raspberry PI   On Board LEDS
@@ -45,7 +45,8 @@ CE0 or CE1 <---->  LED D2
 ![schematic](https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-sch.png)  
 
 ### Boards  
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top">&nbsp;
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top">    
+
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.png" alt="Bottom"> 
 
 ### Assembled boards (V1.0)
