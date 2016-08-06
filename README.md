@@ -27,8 +27,8 @@ Only One GPIO needed for DIO0/DIO1/DIO2 (OR made with 3 diodes) that will make t
 
 ~~Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout~~ This [Single LoraWan Gateway][5] has been tweaked and works right out of the box.
 
-Detailed Description Olv version V1.0
-=====================================
+Detailed Description
+====================
 
 ```
 Raspberry PI   RFM9x Module
@@ -45,8 +45,8 @@ CE0 or CE1 <---->  LED D2
 ![schematic](https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-sch.png)  
 
 ### Boards  
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top" width="40%" height="40%">&nbsp;
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.png" alt="Bottom" width="40%" height="40%">&nbsp; 
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-top.png" alt="Top">&nbsp;
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-bot.png" alt="Bottom"> 
 
 ### Assembled boards (V1.0)
 
