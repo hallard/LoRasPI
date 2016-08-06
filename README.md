@@ -1,12 +1,13 @@
 Raspberry PI Lora Gateway/Node for RFM92/95/96/98/69HCW Modules
 ===============================================================
 
-This shield is used to hold HopeRF [Lora module][4] Software with Raspbery PI. it has just few minimal features and it's working for [TTN network][1]
+This shield is used to hold HopeRF [Lora module][4] Software with Raspbery PI. it has just few minimal features and it's working for [TTN network][1]. 
+
 I tweaked the [Single LoraWan Gateway][5] to get it working out of the box. It should also works with [HAB Supplies Lora Gateway][7] (same pinout), see this excellent [Dave's article][6].
 
 This shield can also act as a LoraWAN Node using [LIMC][9] stack, or also be a Node/Gateway for RF69 networks using the excellent [RadioHead][10] modified library.
 
-As you can see, this shield is small but can do a lot :-)
+As you can see, this shield is small but can do a lot bt if you need a shield with more features (modules) on same board, I've designed a more featured one. It's called RPI Lora Gateway, you can go [here][11] to see it.
 
 Features
 ========
@@ -41,7 +42,7 @@ Detailed Description
 ====================
 
 ```
-Raspberry PI   RFM9x Module
+Raspberry PI   RFM9x Module 1
    GPIO22  <---->  Reset
    GPIO25  <---->  DIO0 OR DIO1 OR DIO2 (Hardware OR done with 1N4148 Diode and R3)
    GPIO24  <---->  DIO5 (Ready)
@@ -86,3 +87,4 @@ See news and other projects on my [blog][2]
 [8]: https://PCBs.io/share/zkD74
 [9]: https://github.com/matthijskooijman/arduino-lmic/
 [10]: https://github.com/hallard/RadioHead
+[11]: https://github.com/hallard/RPI-Lora-Gateway
