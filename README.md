@@ -18,11 +18,13 @@ Features
 **New in Version 1.1**
 
 - Reduced board width so it can be soldered on 2x40 pins connector to expose other GPIOs
-- Added DIO1 and DIO2 ORed with DIO0 and 1N4148 diode to conform LIMC stack
+- Added DIO1 and DIO2 OR'ed with DIO0 and 1N4148 diode to conform LIMC stack
 - Better ground plane isolation
 - Added some via on RF part 
 
 I'm waiting now new V1.1 boards from OSHPark and PCBs.io, so I didn't fully tested V1.1 yet, I will update ASAP.
+
+I discovered a design error on V1.1, R3 resistor should be a pull down resistor and not a pull up, so **you should not populate R3, do not place it**, it's not a real problem since software will activate pull down of the BCM2835 controller.
 
 ~~I'm waiting boards V1.0~~ Boards arrived from OSHPark, all is working as expected (V1.0). ~~so I didn't fully tested them yet, I will update ASAP~~.
 
@@ -35,6 +37,8 @@ SPI connexion is classic (MOSI/MISO/CLK), Chip Select can be connected to CE0 or
 Take care that by default it's connected to CE0 (wired) so you don't have to do anything. If you want to connect to CE1 you'll need to cut CE0 trace on the PCB (on the solder pad).
 
 Only One GPIO needed for DIO0/DIO1/DIO2 (OR made with 3 diodes and one resistor R3) that will make this board fully compatible with current LIMC implementation, even if I've done a software fix which works with no interrupt. Only Needed for Lora modules, if you're using RFM69HCW and and to use IRQ just place D0 and R3.
+
+I discovered a design error on V1.1, R3 resistor should be a pull down resistor and not a pull up, so **you should not populate R3, do not place it**, it's not a real problem since software will activate pull down of the BCM2835 controller.
 
 ~~Other pins that may need be adapted into code (for example if you use TTN network gateway code) according to the following pinout~~ This [Single LoraWan Gateway][5] has been tweaked and works right out of the box.
 
