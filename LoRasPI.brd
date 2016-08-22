@@ -175,14 +175,14 @@
 <wire x1="39.951" y1="8.509" x2="39.951" y2="24.511" width="0" layer="20"/>
 <wire x1="39.951" y1="24.511" x2="2.159" y2="24.511" width="0" layer="20"/>
 <wire x1="2.159" y1="24.511" x2="2.159" y2="8.509" width="0" layer="20"/>
-<text x="20.574" y="10.668" size="1.27" layer="21" font="vector" ratio="15" align="center">LoRasPI V1.1</text>
+<text x="20.574" y="10.668" size="1.27" layer="21" font="vector" ratio="15" align="center">LoRasPI V1.2</text>
 <text x="7.874" y="10.16" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">IO22</text>
 <text x="7.874" y="12.827" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">3V3</text>
 <text x="7.874" y="15.24" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">MOSI</text>
 <text x="7.874" y="17.78" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">MISO</text>
 <text x="7.874" y="20.32" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">CLK</text>
 <text x="7.874" y="22.86" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">GND</text>
-<text x="20.828" y="10.414" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">LoRasPI V1.1</text>
+<text x="20.828" y="10.414" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">LoRasPI V1.2</text>
 <text x="11.557" y="20.955" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">CS</text>
 <text x="30.861" y="9.525" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">A</text>
 <text x="31.496" y="17.526" size="1.6764" layer="21" font="vector" ratio="15" rot="R180" align="center">+</text>
@@ -971,9 +971,9 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <attribute name="NAME" x="34.8615" y="9.525" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
 <attribute name="VALUE" x="35.052" y="11.176" size="0.8128" layer="25" font="vector" ratio="15"/>
 </element>
-<element name="D4" library="_c2h" package="0805-LED-LARGEPADS" value="CS" x="36.83" y="22.098" smashed="yes" rot="R180">
+<element name="D4" library="_c2h" package="0805-LED-LARGEPADS" value="LED" x="36.83" y="22.098" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.9255" y="22.987" size="0.8128" layer="25" font="vector" ratio="15" rot="R270"/>
-<attribute name="VALUE" x="37.719" y="21.082" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
+<attribute name="VALUE" x="37.973" y="24.003" size="0.8128" layer="25" font="vector" ratio="15" rot="R180"/>
 </element>
 <element name="R2" library="_c2h" package="0805-RES" value="390" x="32.512" y="20.955" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.3535" y="20.447" size="0.8128" layer="25" font="vector" ratio="15" rot="R90"/>
@@ -993,9 +993,9 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <element name="D2" library="Seeed-Discrete" package="SOD123-2.7X1.6" value="1N4148" x="24.13" y="23.495" smashed="yes" rot="MR0">
 <attribute name="NAME" x="21.463" y="24.384" size="0.889" layer="26" font="vector" ratio="15" rot="MR270"/>
 </element>
-<element name="R3" library="_c2h" package="0805-RES" value="10K" x="18.415" y="21.59" smashed="yes" rot="MR90">
-<attribute name="NAME" x="19.177" y="23.3045" size="0.889" layer="26" font="vector" ratio="15" rot="MR0"/>
-<attribute name="VALUE" x="16.51" y="20.447" size="0.889" layer="28" font="vector" ratio="15" rot="MR90"/>
+<element name="R3" library="_c2h" package="0805-RES" value="10K" x="18.669" y="21.59" smashed="yes" rot="MR270">
+<attribute name="NAME" x="17.78" y="24.1935" size="0.889" layer="26" font="vector" ratio="15" rot="MR180"/>
+<attribute name="VALUE" x="17.653" y="22.987" size="0.889" layer="26" font="vector" ratio="15" rot="MR270"/>
 </element>
 </elements>
 <signals>
@@ -1028,11 +1028,11 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="D4" pad="MINUS"/>
 <via x="10.16" y="23.6855" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="15.0495" y="17.3355" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="9.271" y="14.605" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="9.906" y="14.351" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="24.257" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="17.5895" y="11.43" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="21.7805" y="18.034" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="36.195" y="23.6855" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="21.9075" y="17.78" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="36.195" y="23.6855" extent="1-16" drill="0.3302" diameter="0.6604"/>
 <via x="30.7975" y="15.24" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="30.7975" y="13.97" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="30.7975" y="12.7" extent="1-16" drill="0.3556" diameter="0.7112"/>
@@ -1050,10 +1050,10 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <via x="23.8125" y="13.335" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="26.162" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="30.2895" y="11.557" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="37.6555" y="19.812" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="37.6555" y="12.192" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="34.8615" y="13.335" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="34.8615" y="18.415" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="37.6555" y="19.939" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="36.6395" y="11.811" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="34.7345" y="13.335" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="34.7345" y="18.415" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="22.352" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="20.447" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="18.542" y="9.398" extent="1-16" drill="0.3556" diameter="0.7112"/>
@@ -1064,14 +1064,13 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="3.5814" y1="14.8336" x2="4.445" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="4.445" y1="13.97" x2="5.08" y2="13.97" width="0.3048" layer="1"/>
 <wire x1="5.08" y1="13.97" x2="7.62" y2="13.97" width="0.254" layer="1"/>
-<wire x1="7.62" y1="13.97" x2="8.255" y2="13.97" width="0.3048" layer="1"/>
-<wire x1="8.255" y1="13.97" x2="8.89" y2="14.605" width="0.3048" layer="1"/>
-<wire x1="8.89" y1="14.605" x2="9.271" y2="14.605" width="0.3048" layer="1"/>
-<via x="35.7505" y="19.812" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="38.9255" y="19.812" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="34.8615" y="12.065" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="39.1795" y="11.938" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="30.7975" y="19.558" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<wire x1="7.62" y1="13.97" x2="9.525" y2="13.97" width="0.3048" layer="1"/>
+<wire x1="9.525" y1="13.97" x2="9.906" y2="14.351" width="0.3048" layer="1"/>
+<via x="35.7505" y="19.939" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="39.1795" y="19.939" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="34.7345" y="11.938" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="39.1795" y="11.811" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="31.0515" y="18.796" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="25.2095" y="11.938" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="20.8915" y="11.684" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="39.0525" y="23.495" extent="1-16" drill="0.3556" diameter="0.7112"/>
@@ -1079,17 +1078,27 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <via x="15.4305" y="23.495" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="33.9725" y="23.749" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="26.0985" y="14.605" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<via x="19.3675" y="19.177" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<via x="20.0025" y="18.542" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="22.2885" y="11.684" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <via x="19.1135" y="11.557" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<contactref element="R3" pad="1"/>
 </signal>
 <signal name="GPIO24">
 <contactref element="U$2" pad="4"/>
-<contactref element="HOPE-RF" pad="DIO5"/>
-<wire x1="12.619" y1="11.43" x2="12.7625" y2="11.5735" width="0.3048" layer="1"/>
-<wire x1="12.619" y1="11.43" x2="7.62" y2="11.43" width="0.3048" layer="1"/>
-<wire x1="7.62" y1="11.43" x2="5.3086" y2="11.43" width="0.254" layer="1"/>
-<wire x1="5.3086" y1="11.43" x2="4.0386" y2="12.7" width="0.3048" layer="1"/>
+<contactref element="R2" pad="2"/>
+<wire x1="4.0386" y1="12.7" x2="4.0386" y2="12.9286" width="0.254" layer="16"/>
+<wire x1="4.0386" y1="12.9286" x2="5.08" y2="13.97" width="0.254" layer="16"/>
+<wire x1="5.08" y1="13.97" x2="7.62" y2="13.97" width="0.254" layer="16"/>
+<wire x1="7.62" y1="13.97" x2="7.874" y2="13.97" width="0.3048" layer="16"/>
+<wire x1="7.874" y1="13.97" x2="9.525" y2="15.621" width="0.3048" layer="16"/>
+<wire x1="9.525" y1="15.621" x2="18.669" y2="15.621" width="0.3048" layer="16"/>
+<wire x1="18.669" y1="15.621" x2="21.59" y2="18.542" width="0.3048" layer="16"/>
+<wire x1="21.59" y1="18.542" x2="28.067" y2="18.542" width="0.3048" layer="16"/>
+<wire x1="28.067" y1="18.542" x2="29.464" y2="19.939" width="0.3048" layer="16"/>
+<wire x1="29.464" y1="19.939" x2="30.861" y2="19.939" width="0.3048" layer="16"/>
+<via x="30.861" y="19.939" extent="1-16" drill="0.3556" diameter="0.7112"/>
+<wire x1="30.861" y1="19.939" x2="32.147" y2="19.939" width="0.3048" layer="1"/>
+<wire x1="32.147" y1="19.939" x2="32.512" y2="19.955" width="0.3048" layer="1"/>
 </signal>
 <signal name="GPIO25">
 <contactref element="U$2" pad="8"/>
@@ -1099,15 +1108,13 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="R3" pad="2"/>
 <wire x1="22.495" y1="19.558" x2="22.495" y2="21.59" width="0.3048" layer="16"/>
 <wire x1="22.495" y1="21.59" x2="22.495" y2="23.495" width="0.3048" layer="16"/>
-<wire x1="18.415" y1="22.59" x2="17.51" y2="22.59" width="0.3048" layer="16"/>
-<wire x1="17.51" y1="22.59" x2="16.51" y2="21.59" width="0.3048" layer="16"/>
-<wire x1="16.51" y1="21.59" x2="16.51" y2="17.145" width="0.3048" layer="16"/>
-<wire x1="16.51" y1="17.145" x2="15.875" y2="16.51" width="0.3048" layer="16"/>
-<wire x1="15.875" y1="16.51" x2="5.3086" y2="16.51" width="0.3048" layer="16"/>
+<wire x1="16.51" y1="16.51" x2="5.3086" y2="16.51" width="0.3048" layer="16"/>
 <wire x1="5.3086" y1="16.51" x2="4.0386" y2="17.78" width="0.3048" layer="16"/>
-<wire x1="18.415" y1="22.59" x2="20.685" y2="22.59" width="0.3048" layer="16"/>
-<wire x1="20.685" y1="22.59" x2="21.59" y2="23.495" width="0.3048" layer="16"/>
-<wire x1="21.59" y1="23.495" x2="22.495" y2="23.495" width="0.3048" layer="16"/>
+<wire x1="16.51" y1="16.51" x2="18.7325" y2="18.7325" width="0.3048" layer="16"/>
+<wire x1="18.7325" y1="18.7325" x2="19.558" y2="19.558" width="0.3048" layer="16"/>
+<wire x1="22.495" y1="19.558" x2="19.558" y2="19.558" width="0.3048" layer="16"/>
+<wire x1="18.669" y1="20.59" x2="18.669" y2="18.796" width="0.3048" layer="16"/>
+<wire x1="18.669" y1="18.796" x2="18.7325" y2="18.7325" width="0.3048" layer="16"/>
 </signal>
 <signal name="ANTENNA">
 <contactref element="HOPE-RF" pad="ANT"/>
@@ -1153,14 +1160,9 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <contactref element="C1" pad="2"/>
 <wire x1="28.7645" y1="17.542" x2="28.7645" y2="17.51" width="0.8128" layer="1"/>
 <via x="25.908" y="17.526" extent="1-16" drill="0.4572" diameter="0.9144"/>
-<wire x1="19.05" y1="13.335" x2="17.145" y2="13.335" width="0.8128" layer="16"/>
-<wire x1="17.145" y1="13.335" x2="7.2136" y2="13.335" width="0.8128" layer="16"/>
-<wire x1="7.2136" y1="13.335" x2="6.5786" y2="12.7" width="0.8128" layer="16"/>
-<contactref element="R3" pad="1"/>
+<wire x1="18.415" y1="12.7" x2="6.5786" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="24.511" y1="17.51" x2="23.225" y2="17.51" width="0.8128" layer="16"/>
-<wire x1="23.225" y1="17.51" x2="19.05" y2="13.335" width="0.8128" layer="16"/>
-<wire x1="18.415" y1="20.59" x2="18.415" y2="14.605" width="0.3048" layer="16"/>
-<wire x1="18.415" y1="14.605" x2="17.145" y2="13.335" width="0.3048" layer="16"/>
+<wire x1="23.225" y1="17.51" x2="18.415" y2="12.7" width="0.8128" layer="16"/>
 <wire x1="24.511" y1="17.51" x2="25.892" y2="17.51" width="0.8128" layer="16"/>
 <wire x1="25.892" y1="17.51" x2="25.908" y2="17.526" width="0.8128" layer="16"/>
 <wire x1="28.7645" y1="17.51" x2="25.924" y2="17.51" width="0.8128" layer="1"/>
@@ -1190,12 +1192,10 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <signal name="GPIO22">
 <contactref element="U$2" pad="1"/>
 <contactref element="HOPE-RF" pad="RST"/>
-<wire x1="6.1214" y1="10.16" x2="6.985" y2="10.16" width="0.3048" layer="16"/>
-<wire x1="6.985" y1="10.16" x2="9.017" y2="12.192" width="0.3048" layer="16"/>
-<via x="9.017" y="12.192" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<wire x1="9.017" y1="12.192" x2="10.414" y2="13.589" width="0.3048" layer="1"/>
-<wire x1="10.414" y1="13.589" x2="12.7485" y2="13.589" width="0.3048" layer="1"/>
+<wire x1="11.049" y1="13.589" x2="12.7485" y2="13.589" width="0.3048" layer="1"/>
 <wire x1="12.7485" y1="13.589" x2="12.7645" y2="13.605" width="0.3048" layer="1"/>
+<wire x1="11.049" y1="13.589" x2="7.62" y2="10.16" width="0.3048" layer="1"/>
+<wire x1="7.62" y1="10.16" x2="6.1214" y2="10.16" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="D3" pad="PLUS"/>
@@ -1247,18 +1247,11 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 </signal>
 <signal name="CS">
 <contactref element="HOPE-RF" pad="NSS"/>
-<contactref element="R2" pad="2"/>
-<contactref element="J1" pad="2"/>
 <wire x1="14.875" y1="15.51" x2="15.875" y2="16.51" width="0.3048" layer="1"/>
 <wire x1="15.875" y1="16.51" x2="15.875" y2="20.447" width="0.3048" layer="1"/>
 <wire x1="15.875" y1="20.447" x2="15.367" y2="20.955" width="0.3048" layer="1"/>
 <via x="15.367" y="20.955" extent="1-16" drill="0.3556" diameter="0.7112"/>
-<wire x1="15.367" y1="20.955" x2="13.97" y2="20.955" width="0.3048" layer="16"/>
-<wire x1="32.512" y1="19.955" x2="32.512" y2="18.542" width="0.3048" layer="1"/>
-<wire x1="32.512" y1="18.542" x2="29.48" y2="15.51" width="0.3048" layer="1"/>
-<wire x1="12.7645" y1="15.51" x2="13.97" y2="15.51" width="0.3048" layer="1"/>
-<wire x1="14.875" y1="15.51" x2="29.48" y2="15.51" width="0.3048" layer="1"/>
-<wire x1="14.875" y1="15.51" x2="13.97" y2="15.51" width="0.3048" layer="1"/>
+<wire x1="12.7645" y1="15.51" x2="14.875" y2="15.51" width="0.3048" layer="1"/>
 </signal>
 </signals>
 <errors>
@@ -1267,19 +1260,18 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <approved hash="4,1,40bd8875071324df"/>
 <approved hash="4,1,7ea3d379e3132861"/>
 <approved hash="4,1,434d5e4b82cde2ca"/>
-<approved hash="5,1,bb1455c90aff6910"/>
 <approved hash="4,1,58eda5f899956570"/>
 <approved hash="4,1,5b6da4f89b5567f0"/>
+<approved hash="4,16,9d58147f700fcdff"/>
 <approved hash="4,16,3494eaeda6c58071"/>
+<approved hash="4,16,bff5faa7789df3d9"/>
 <approved hash="4,16,bbc86376db1b8f82"/>
 <approved hash="4,16,38cf4ef9c59fe7a9"/>
 <approved hash="4,16,b2a3626736cf8cad"/>
 <approved hash="4,16,434d5e4b82cde2ca"/>
 <approved hash="19,16,1c7284f1122b8452"/>
-<approved hash="19,16,19fb6a33eb4991d2"/>
-<approved hash="4,16,5b6da4f89b5567f0"/>
-<approved hash="5,16,bb1455c90aff6910"/>
 <approved hash="4,16,58eda5f899956570"/>
+<approved hash="4,16,5b6da4f89b5567f0"/>
 </errors>
 </board>
 </drawing>

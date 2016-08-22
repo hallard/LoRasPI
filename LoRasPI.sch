@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1858,7 +1858,7 @@ Standard A4 size frame in Landscape</description>
 <part name="R1" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
 <part name="D3" library="_c2h" deviceset="LED" device="0805-LARGE" value="TX/RX"/>
 <part name="SUPPLY6" library="supply2" deviceset="GND" device=""/>
-<part name="D4" library="_c2h" deviceset="LED" device="0805-LARGE" value="CS"/>
+<part name="D4" library="_c2h" deviceset="LED" device="0805-LARGE" value="LED"/>
 <part name="R2" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="390"/>
 <part name="SUPPLY7" library="supply2" deviceset="GND" device=""/>
 <part name="J1" library="dp_devices" deviceset="JUMPER_1X3" device="0805">
@@ -1867,14 +1867,14 @@ Standard A4 size frame in Landscape</description>
 </part>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="Lora Raspberry PI Gateway / Node"/>
-<attribute name="CREVISION" value="1.1"/>
+<attribute name="CREVISION" value="1.2"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="D0" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
 <part name="D1" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
 <part name="D2" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
 <part name="R3" library="_c2h" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="P+4" library="_c2h" deviceset="3V3" device=""/>
+<part name="SUPPLY8" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1882,22 +1882,24 @@ Standard A4 size frame in Landscape</description>
 <text x="106.68" y="19.05" size="2.54" layer="94">Lora Raspberry PI Gateway / Node</text>
 <text x="106.68" y="15.24" size="2.54" layer="94">See http://github/hallard/LoRasPI</text>
 <text x="91.44" y="68.58" size="1.778" layer="95">CS</text>
-<text x="143.51" y="101.6" size="1.778" layer="95">CS</text>
+<text x="138.43" y="101.6" size="1.778" layer="95">CS</text>
 <text x="27.94" y="60.96" size="2.54" layer="94">Optional capacitors
 Bottom Side of board</text>
 <text x="114.3" y="68.58" size="1.6764" layer="94">RFM69HCW</text>
-<text x="31.115" y="15.875" size="2.54" layer="94">Logic OR on DIO0/1/2 to be
-LIMC compatible but absolutly
+<text x="15.24" y="15.875" size="2.54" layer="94">Logic OR on DIO0/1/2 to be
+LMIC compatible but absolutly
 not mandatory since I made
-a software fix in LIMC</text>
+a software fix in LMIC</text>
+<text x="66.04" y="111.76" size="1.778" layer="94">RST</text>
+<text x="109.22" y="104.14" size="1.778" layer="94">DIO0</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="88.9" y="104.14"/>
 <instance part="HOPE-RF" gate="G$1" x="116.84" y="63.5"/>
 <instance part="SUPPLY1" gate="GND" x="116.84" y="40.64"/>
-<instance part="SUPPLY2" gate="GND" x="111.76" y="106.68" rot="R90"/>
+<instance part="SUPPLY2" gate="GND" x="116.84" y="106.68" rot="R90"/>
 <instance part="SUPPLY3" gate="GND" x="71.12" y="96.52"/>
-<instance part="P+1" gate="3V3" x="63.5" y="109.22"/>
+<instance part="P+1" gate="3V3" x="53.34" y="109.22"/>
 <instance part="P+2" gate="3V3" x="116.84" y="78.74"/>
 <instance part="J$1" gate="1" x="157.48" y="63.5"/>
 <instance part="SUPPLY4" gate="GND" x="154.94" y="43.18"/>
@@ -1945,11 +1947,11 @@ a software fix in LIMC</text>
 <instance part="D0" gate="G$1" x="46.355" y="43.815" smashed="yes"/>
 <instance part="D1" gate="G$1" x="46.355" y="38.735" smashed="yes"/>
 <instance part="D2" gate="G$1" x="46.355" y="33.655" smashed="yes"/>
-<instance part="R3" gate="G$1" x="67.945" y="46.355" smashed="yes" rot="R270">
-<attribute name="NAME" x="64.3636" y="47.625" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="69.723" y="48.895" size="1.778" layer="96" rot="R270"/>
+<instance part="R3" gate="G$1" x="67.945" y="31.75" smashed="yes" rot="R90">
+<attribute name="NAME" x="71.5264" y="30.48" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="66.167" y="29.21" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+4" gate="3V3" x="67.945" y="54.61"/>
+<instance part="SUPPLY8" gate="GND" x="67.945" y="22.86"/>
 </instances>
 <busses>
 </busses>
@@ -1957,13 +1959,11 @@ a software fix in LIMC</text>
 <net name="GPIO24" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="18"/>
-<wire x1="96.52" y1="109.22" x2="107.95" y2="109.22" width="0.1524" layer="91"/>
 <label x="99.06" y="109.22" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="HOPE-RF" gate="G$1" pin="DIO5"/>
-<wire x1="129.54" y1="55.88" x2="140.97" y2="55.88" width="0.1524" layer="91"/>
-<label x="132.08" y="55.88" size="1.778" layer="95"/>
+<wire x1="96.52" y1="109.22" x2="147.32" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="147.32" y1="109.22" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="147.32" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GPIO25" class="0">
@@ -1986,7 +1986,7 @@ a software fix in LIMC</text>
 <label x="70.485" y="38.735" size="1.778" layer="95"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="67.945" y1="38.735" x2="81.28" y2="38.735" width="0.1524" layer="91"/>
-<wire x1="67.945" y1="41.275" x2="67.945" y2="38.735" width="0.1524" layer="91"/>
+<wire x1="67.945" y1="36.83" x2="67.945" y2="38.735" width="0.1524" layer="91"/>
 <junction x="67.945" y="38.735"/>
 </segment>
 </net>
@@ -2043,7 +2043,7 @@ a software fix in LIMC</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="20"/>
-<wire x1="96.52" y1="106.68" x2="109.22" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="106.68" x2="114.3" y2="106.68" width="0.1524" layer="91"/>
 <label x="99.06" y="106.68" size="1.778" layer="95"/>
 <pinref part="SUPPLY2" gate="GND" pin="GND"/>
 </segment>
@@ -2088,11 +2088,16 @@ a software fix in LIMC</text>
 <pinref part="SUPPLY7" gate="GND" pin="GND"/>
 <wire x1="170.18" y1="101.6" x2="173.99" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="SUPPLY8" gate="GND" pin="GND"/>
+<wire x1="67.945" y1="25.4" x2="67.945" y2="26.67" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="3V3" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="17"/>
-<wire x1="81.28" y1="109.22" x2="63.5" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
 <label x="71.12" y="109.22" size="1.778" layer="95"/>
 <pinref part="P+1" gate="3V3" pin="3V3"/>
 </segment>
@@ -2111,11 +2116,6 @@ a software fix in LIMC</text>
 <wire x1="43.18" y1="91.44" x2="43.18" y2="93.98" width="0.1524" layer="91"/>
 <junction x="43.18" y="91.44"/>
 <pinref part="P+3" gate="3V3" pin="3V3"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<pinref part="P+4" gate="3V3" pin="3V3"/>
-<wire x1="67.945" y1="54.61" x2="67.945" y2="51.435" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="CE1" class="0">
@@ -2212,9 +2212,7 @@ a software fix in LIMC</text>
 <wire x1="104.14" y1="68.58" x2="91.44" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="127" y1="101.6" x2="149.86" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="127" y1="101.6" x2="140.97" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -2223,7 +2221,10 @@ a software fix in LIMC</text>
 <errors>
 <approved hash="104,1,81.28,109.22,U$2,17,3V3,,,"/>
 <approved hash="104,1,116.84,76.2,HOPE-RF,VCC,3V3,,,"/>
-<approved hash="115,1,138.43,101.6,CS,,,,,"/>
+<approved hash="209,1,104.14,68.58,CS,,,,,"/>
+<approved hash="106,1,104.14,68.58,CS,,,,,"/>
+<approved hash="111,1,128.27,101.6,CS,,,,,"/>
+<approved hash="115,1,133.985,101.6,CS,,,,,"/>
 <approved hash="115,1,97.79,68.58,CS,,,,,"/>
 </errors>
 </schematic>
