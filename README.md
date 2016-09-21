@@ -5,7 +5,9 @@ This shield is used to hold HopeRF [Lora module][4] Software with Raspbery PI. i
 
 I tweaked the [Single LoraWan Gateway][5] to get it working out of the box. It should also works with [HAB Supplies Lora Gateway][7] (same pinout), see this excellent [Dave's article][6].
 
-This shield can also act as a LoraWAN Node using [LIMC][9] stack, or also be a Node/Gateway for RF69 networks using the excellent [RadioHead][10] modified library. This RadioHead version tested and worked with this shield, see [readme][12] of library.
+This shield can also act as a LoraWAN Node/gateway using this custom dedicated software    
+- RPI version of [LMIC][9] stack. This LMIC is working with this shield, see [readme][13] of repo.
+- for RF69 networks using the excellent [RadioHead][10] customized library. This version is working with this shield, see [readme][12] of library.
 
 As you can see, this shield is small but can do a lot but if you need a shield with more features (modules) on same board, I've designed a more featured one. It's called RPI Lora Gateway, you can go [here][11] to see it.
 
@@ -106,7 +108,8 @@ See news and other projects on my [blog][2]
 [6]: http://www.daveakerman.com/?p=1719
 [7]: https://store.uputronics.com/index.php?route=product/product&search=lora&product_id=68
 [8]: https://PCBs.io/share/zvXL8
-[9]: https://github.com/matthijskooijman/arduino-lmic/
+[9]: https://github.com/hallard/arduino-lmic/tree/rpi
 [10]: https://github.com/hallard/RadioHead
 [11]: https://github.com/hallard/RPI-Lora-Gateway
 [12]: https://github.com/hallard/RadioHead/blob/master/README.md
+[13]: https://github.com/hallard/arduino-lmic/blob/rpi/README.md
