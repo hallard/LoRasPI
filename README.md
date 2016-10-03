@@ -11,21 +11,6 @@ This shield can also act as a LoraWAN Node/gateway using this custom dedicated s
 
 As you can see, this shield is small but can do a lot but if you need a shield with more features (modules) on same board, I've designed a more featured one. It's called RPI Lora Gateway, you can go [here][11] to see it.
 
-**Error in V1.2, one small trace on CS (CE0 and CE1) signal is missing, fixed in V1.2a**, I really apologize for this error, Eagle beginner error, ALWAYS place junction on schematic, because sometime it looks like connected but it's not!
-
-Here is how to fix this V1.2 trace missing
-
-Clean Way (experienced soldering user)
----------------------------------------
-With a small cutter or tool remove silk to bring via copper visible, then solder a tiny wire from CS pad to Via as follow
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-clean-fix.jpg" alt="LoRasPI V1.2 Clean trace fix">
-
-Easy Way
---------
-Just route the CE0 or CE1 signal with a small wire dirctly to RFM9x module as follow
-<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-easy-fix.jpg" alt="LoRasPI V1.2 Easy trace fix">
-Purple wire if you want to use CE0 and Cyan for CE1
-
 Features
 ========
 - Placement for RFM92/95/96/98 Lora module or RFM69HCW classic module
@@ -41,6 +26,20 @@ Features
 - R3 Error corrected, it's now a Pull Down
 - DIO5 connection to GPIO24 removed, not used
 - 2nd led is now connected to GPIO24 instead of CS line
+
+**Error in V1.2, one small trace on CS (CE0 and CE1) signal is missing, fixed in V1.2a**, I really apologize for this error, Eagle beginner error, ALWAYS place junction on schematic, because sometime it looks like connected but it's not!
+
+Here is how to fix this V1.2 trace missing
+
+Clean Way (experienced soldering user)
+---------------------------------------
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-clean-fix.jpg" alt="LoRasPI V1.2 Clean trace fix">
+
+Easy Way
+--------
+Just route the CE0 or CE1 signal with a small wire dirctly to RFM9x module as follow
+<img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-easy-fix.jpg" alt="LoRasPI V1.2 Easy trace fix">
+Use purple wire if you want to use CE0 and Cyan for CE1
 
 **New in Version 1.1**
 
