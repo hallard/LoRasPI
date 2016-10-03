@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="dots" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1867,7 +1867,7 @@ Standard A4 size frame in Landscape</description>
 </part>
 <part name="NAME" library="SparkFun-Aesthetics" deviceset="FRAME-A4L" device="" value="Value">
 <attribute name="CNAME" value="Lora Raspberry PI Gateway / Node"/>
-<attribute name="CREVISION" value="1.2"/>
+<attribute name="CREVISION" value="1.2a"/>
 <attribute name="DESIGNER" value="Charles-Henri Hallard"/>
 </part>
 <part name="D0" library="Seeed-Discrete" deviceset="D-ESD-2P" device="-CESD5V0D1" value="1N4148"/>
@@ -2213,6 +2213,8 @@ a software fix in LMIC</text>
 </segment>
 <segment>
 <wire x1="127" y1="101.6" x2="140.97" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="2"/>
+<junction x="127" y="101.6"/>
 </segment>
 </net>
 </nets>

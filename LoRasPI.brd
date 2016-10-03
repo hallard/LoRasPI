@@ -175,14 +175,14 @@
 <wire x1="39.951" y1="8.509" x2="39.951" y2="24.511" width="0" layer="20"/>
 <wire x1="39.951" y1="24.511" x2="2.159" y2="24.511" width="0" layer="20"/>
 <wire x1="2.159" y1="24.511" x2="2.159" y2="8.509" width="0" layer="20"/>
-<text x="20.574" y="10.668" size="1.27" layer="21" font="vector" ratio="15" align="center">LoRasPI V1.2</text>
+<text x="20.574" y="10.668" size="1.27" layer="21" font="vector" ratio="15" align="center">LoRasPI 1.2a</text>
 <text x="7.874" y="10.16" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">IO22</text>
 <text x="7.874" y="12.827" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">3V3</text>
 <text x="7.874" y="15.24" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">MOSI</text>
 <text x="7.874" y="17.78" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">MISO</text>
 <text x="7.874" y="20.32" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">CLK</text>
 <text x="7.874" y="22.86" size="0.8128" layer="21" font="vector" ratio="15" align="center-left">GND</text>
-<text x="20.828" y="10.414" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">LoRasPI V1.2</text>
+<text x="20.828" y="10.414" size="1.27" layer="22" font="vector" ratio="15" rot="MR0" align="center">LoRasPI 1.2a</text>
 <text x="11.557" y="20.955" size="1.016" layer="22" font="vector" ratio="15" rot="MR0" align="center">CS</text>
 <text x="30.861" y="9.525" size="1.27" layer="21" font="vector" ratio="15" rot="R90" align="center">A</text>
 <text x="31.496" y="17.526" size="1.6764" layer="21" font="vector" ratio="15" rot="R180" align="center">+</text>
@@ -1252,6 +1252,8 @@ Please ensure your boards meet these minimum design rule requirements.</descript
 <wire x1="15.875" y1="20.447" x2="15.367" y2="20.955" width="0.3048" layer="1"/>
 <via x="15.367" y="20.955" extent="1-16" drill="0.3556" diameter="0.7112"/>
 <wire x1="12.7645" y1="15.51" x2="14.875" y2="15.51" width="0.3048" layer="1"/>
+<contactref element="J1" pad="2"/>
+<wire x1="15.367" y1="20.955" x2="13.97" y2="20.955" width="0.3048" layer="16"/>
 </signal>
 </signals>
 <errors>
