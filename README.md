@@ -109,7 +109,7 @@ V1.0 connected to Raspberry PI.
 
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-on-Pi.jpg" alt="LoRasPI plugged on PI">
 
-You can order the PCB of this board at [OSHPARK][3] (V1.1) or new V1.2 at [PCBs.io][8]. PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price and share new boards. So if you don't care about PCB manufacturer please use PCBs.io.
+You can order the PCB of this board at [OSHPARK][3] (V1.1) or new V1.2a at [PCBs.io][8]. PCBs.io give me some reward when you order my designed boards from their site. This is pretty good, because I can use these rewards to create and design new boards and order boards for a discounted price and share new boards. So if you don't care about PCB manufacturer please use PCBs.io.
 
 ##License
 
@@ -126,7 +126,7 @@ See news and other projects on my [blog][2]
 [5]: https://github.com/hallard/single_chan_pkt_fwd
 [6]: http://www.daveakerman.com/?p=1719
 [7]: https://store.uputronics.com/index.php?route=product/product&search=lora&product_id=68
-[8]: https://PCBs.io/share/zvXL8
+[8]: https://PCBs.io/share/4q9kM
 [9]: https://github.com/hallard/arduino-lmic/tree/rpi
 [10]: https://github.com/hallard/RadioHead
 [11]: https://github.com/hallard/RPI-Lora-Gateway
