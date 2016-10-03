@@ -33,6 +33,7 @@ Here is how to fix this V1.2 trace missing
 
 Clean Way (experienced soldering user)
 ---------------------------------------
+With a small cutter or tool remove silk to bring via copper visible, then solder a tiny wire from CS pad to Via as follow (in green)
 <img src="https://raw.githubusercontent.com/hallard/LoRasPI/master/images/LoRasPI-clean-fix.jpg" alt="LoRasPI V1.2 Clean trace fix">
 
 Easy Way
