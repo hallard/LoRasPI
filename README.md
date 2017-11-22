@@ -77,8 +77,8 @@ Raspberry PI   RFM9x Module 1
    GPIO25  <---->  DIO0 OR DIO1 OR DIO2 (Hardware OR done with 1N4148 Diode and R3)
 
 Raspberry PI   On Board LEDS
-   GPIO23  <---->  LED D1 TX/RX
-   GPIO24  <---->  LED D2 LED
+   GPIO23  <---->  LED D3 TX/RX
+   GPIO24  <---->  LED D4 LED
 ```
 
 **V1.0 and V1.1**
